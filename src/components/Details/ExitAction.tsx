@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
+import { View, Text, StyleSheet, TouchableWithoutFeedback } from 'react-native';
 
 import { Spacing } from '../../constants/values';
 import DisplayContext from "../../context";
@@ -11,11 +11,11 @@ export default function ExitAction() {
         return null;
     }
 
-    return <TouchableNativeFeedback onPress={()=>setDisplayStatus(false)}>
+    return <TouchableWithoutFeedback onPress={()=>setDisplayStatus(false)}>
         <View style={styles.action}>
             <Text style={styles.text}>✖</Text>
         </View>
-    </TouchableNativeFeedback>;
+    </TouchableWithoutFeedback>;
 }
 
 const styles = StyleSheet.create({
