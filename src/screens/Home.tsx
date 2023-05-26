@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
-import { View, StyleSheet, StatusBar, LogBox, } from 'react-native'
+import {View, StyleSheet, StatusBar, LogBox} from 'react-native';
 
 import BoatSlider from '../components/BoatSlider';
 import Header from '../components/Header';
 
 export default function Home() {
-  useEffect(()=>{
+  useEffect(() => {
     LogBox.ignoreLogs([
       'Animated: `useNativeDriver` was not specified',
       'Warning: componentWillMount has been renamed',
@@ -14,11 +14,11 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#fff" barStyle='dark-content' />
-      <Header/>
-      <BoatSlider/>
+      <StatusBar backgroundColor="#fff" barStyle="dark-content" />
+      <Header />
+      <BoatSlider />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({

@@ -1,4 +1,4 @@
 interface DisplayContextType {
-    displayStatus: boolean,
-    setDisplayStatus: any,
+  displayStatus: boolean;
+  setDisplayStatus: any;
 }
