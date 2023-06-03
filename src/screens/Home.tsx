@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, StyleSheet, StatusBar, LogBox} from 'react-native';
+import {View, StyleSheet, StatusBar, LogBox, SafeAreaView} from 'react-native';
 
 import BoatSlider from '../components/BoatSlider';
 import Header from '../components/Header';
@@ -13,11 +13,11 @@ export default function Home() {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#fff" barStyle="dark-content" />
       <Header />
       <BoatSlider />
-    </View>
+    </SafeAreaView>
   );
 }
 

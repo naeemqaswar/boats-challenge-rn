@@ -5,7 +5,10 @@ import {
   StyleSheet,
   Image,
   TouchableWithoutFeedback,
+  SafeAreaView,
 } from 'react-native';
+import Animated, {FadeOutUp} from 'react-native-reanimated';
+import {getStatusBarHeight} from 'react-native-status-bar-height';
 
 import {Spacing} from '../constants/values';
 import DisplayContext from '../context';
@@ -16,7 +19,7 @@ export default function Header() {
   if (displayStatus) return null;
 
   return (
-    <View style={styles.header}>
+    <Animated.View style={styles.header} exiting={FadeOutUp.duration(200)}>
       <Text style={styles.title}>Boats</Text>
       <TouchableWithoutFeedback onPress={() => {}}>
         <Image
@@ -25,14 +28,14 @@ export default function Header() {
           source={require('../../assets/icons/search.png')}
         />
       </TouchableWithoutFeedback>
-    </View>
+    </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
   header: {
     position: 'absolute',
-    top: 15,
+    top: 15 + getStatusBarHeight(true),
     left: 0,
     width: '100%',
     flexDirection: 'row',

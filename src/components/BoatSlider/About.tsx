@@ -44,7 +44,7 @@ export default function About(props: any) {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    marginTop: 15,
+    marginTop: 20,
   },
   title: {
     color: '#0d0b0c',

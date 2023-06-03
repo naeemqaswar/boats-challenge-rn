@@ -63,3 +63,6 @@ yarn-error.log
 .metro-health-check*
 
 .vscode
+package-lock.json
+Podfile.lock
+ios/BoatsChallengeRN.xcworkspace/*

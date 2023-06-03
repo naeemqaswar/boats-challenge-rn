@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     color: '#636363',
     fontSize: 26,
     textTransform: 'uppercase',
-    marginBottom: 10,
+    marginBottom: 15,
   },
   specWrapper: {
     marginBottom: 15,

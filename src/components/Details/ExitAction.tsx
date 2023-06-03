@@ -30,9 +30,9 @@ const styles = StyleSheet.create({
     left: Spacing.screenHorizontal,
     backgroundColor: '#9e9e9e',
     alignItems: 'center',
-    paddingTop: 2,
     elevation: 5,
     borderColor: 'white',
+    justifyContent: 'center',
     borderTopLeftRadius: 100,
     borderTopRightRadius: 100,
     borderBottomLeftRadius: 100,
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#fff',
-    fontSize: 16,
-    fontFamily: 'lucida grande',
+    fontSize: 15,
     fontWeight: 'bold',
+    lineHeight: 18,
   },
 });

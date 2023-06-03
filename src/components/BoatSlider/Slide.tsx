@@ -35,7 +35,7 @@ export default function Slide(props: any) {
 
   useEffect(() => {
     if (displayStatus === true) {
-      xOffset.value = withSpring(180, {stiffness: 50, mass: 0.1});
+      xOffset.value = withSpring(210, {stiffness: 50, mass: 0.1});
       yOffset.value = withSpring(100, {stiffness: 50, mass: 0.1});
       rotation.value = withSpring(-90, {stiffness: 30, mass: 0.1});
     } else {
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     marginTop: 140,
   },
   imageContainer: {
-    height: 470,
+    height: '68%',
     width: '100%',
     alignItems: 'center',
   },
