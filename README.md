@@ -1,7 +1,7 @@
 # Boats Challenge (UI) - React Native
 
 <div align="left">
-<img src="https://drive.google.com/uc?export=download&id=1Z3R_4MYsVxyAWygP8xv_m0RYjhOUUkwB"/>
+  ![boats-challenge](https://github.com/naeemqaswar/boats-challenge-rn/assets/23404445/ab3cc69e-7bd1-4b37-b502-cce93b682b84)
 </div>
 
 ## Inspiration
